@@ -6,6 +6,7 @@ capslock::return
 ^+s::suspend
 ^+r::reload
 
+
 ~z::
 send ^q
 return
@@ -26,6 +27,10 @@ return
 send 4
 return
 
+~a::
+send {LButton}
+return
+
 XButton1::
 ~space::
 send 2
@@ -39,28 +44,14 @@ send 3
 ;send {f1 up}
 return
 
+
 ~q::
-send {RButton}
-sleep 300 
 send a
 send {LButton}
 return
 
-; q, RButton没有冲突
-; RButton,a 需要间隔300
-; a Lbutton 需要同时出现
-
-~e::
-return
-
-; e,a 100 会抵消e
-
-~a::
-send {LButton}
-return
-
-~w::
-;sleep 200 
-;send a
+~r::
 ;send {LButton}
 return
+
+

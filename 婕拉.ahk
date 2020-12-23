@@ -43,7 +43,7 @@ return
 
 ~q::
 send w
-sleep 250
+sleep 400
 send a
 send {LButton}
 return
@@ -51,6 +51,7 @@ return
 
 ;100 无法释放q,q被a重置
 ;200 q不会被a重置，但没有富裕空间
+;250 实际中容易重置q
 
 ~w::
 ;send q 

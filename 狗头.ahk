@@ -41,26 +41,13 @@ return
 
 ~q::
 send {RButton}
-sleep 300 
+sleep 1000 
 send a
 send {LButton}
 return
 
+
+
 ; q, RButton没有冲突
 ; RButton,a 需要间隔300
 ; a Lbutton 需要同时出现
-
-~e::
-return
-
-; e,a 100 会抵消e
-
-~a::
-send {LButton}
-return
-
-~w::
-;sleep 200 
-;send a
-;send {LButton}
-return
