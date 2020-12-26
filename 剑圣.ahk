@@ -31,7 +31,7 @@ return
 send {LButton}
 return
 
-XButton1::
+
 ~space::
 send 2
 sleep 10
@@ -46,10 +46,27 @@ return
 
 
 ~q::
+sleep 250
+send a
+send {LButton}
+sleep 950
+send e
+return
+
+;q,e 1150 e无法刷新
+
+
+
+~w::
+return
+
+
+~e::
 send a
 send {LButton}
 return
 
-
-
-
+;XButton1::
+;send w
+;send q
+;return 

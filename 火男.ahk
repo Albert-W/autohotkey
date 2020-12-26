@@ -31,7 +31,7 @@ return
 send {LButton}
 return
 
-XButton1::
+
 ~space::
 send 2
 sleep 10
@@ -45,11 +45,22 @@ send 3
 return
 
 
-~q::
-send a
-send {LButton}
+~w::
+;sleep 100
+;send q
+return 
+
+~e::
+send q
+return 
+
+
+~r::
+;send {LButton}
+send q
 return
 
-
-
-
+XButton1::
+send w
+send q
+return 
